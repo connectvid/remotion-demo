@@ -12,7 +12,7 @@ import { staticFile } from 'remotion';
 loadFont();
 
 const container: React.CSSProperties = {
-  backgroundColor: 'white',
+  backgroundColor: 'blue',
 };
 
 export const Main = ({ title }: z.infer<typeof CompositionProps>) => {
@@ -52,9 +52,27 @@ export const Main = ({ title }: z.infer<typeof CompositionProps>) => {
         }}
       >
         <TextFade>
-          <h1>Good morning</h1>
+          <h1>Good People</h1>
         </TextFade>
       </Sequence>
+      {/* 
+      <svg height="300" width="500">
+        <path
+          d="M100 100 C150 50, 250 50, 300 100
+           S400 150, 400 200
+           S350 300, 300 300
+           S100 350, 100 300
+           S50 250, 100 200
+           S150 150, 200 150
+           S300 100, 350 150
+           S450 250, 400 300
+           S300 350, 200 300
+           S50 150, 100 100"
+          fill="none"
+          stroke="black"
+          stroke-width="5"
+        />
+      </svg> */}
     </AbsoluteFill>
   );
 };
